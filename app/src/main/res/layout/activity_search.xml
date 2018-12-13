@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_view"
+        android:queryHint="请输入商品"
+        android:layout_marginTop="5dp"
+        android:iconifiedByDefault="false"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:text="历史搜索："
+        android:layout_marginTop="10dp"
+        android:textColor="#d43c3c"
+        android:textSize="20sp" />
+
+    <lenovo.example.com.shashe20181119.SelfView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text"
+        android:id="@+id/self"/>
+</RelativeLayout>
